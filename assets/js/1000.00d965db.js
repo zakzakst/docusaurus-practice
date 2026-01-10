@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkdocusaurus_practice=globalThis.webpackChunkdocusaurus_practice||[]).push([[1e3],{1e3(a,c,e){e.d(c,{createRadarServices:()=>s.f});var s=e(7846);e(7960)}}]);
