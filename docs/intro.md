@@ -55,3 +55,19 @@ flowchart TB
     F[歯を磨く] -->
     G((やっぱり寝る))
 ```
+
+``` pumld
+left to right direction
+
+actor "ユーザー" as User
+
+package "認証機能" {
+  usecase "ユーザー登録をする" as Register
+  usecase "ログインする" as Login
+  usecase "ログアウトする" as Logout
+}
+
+User --> Register
+User --> Login
+User --> Logout
+```
