@@ -148,7 +148,10 @@ const config: Config = {
     },
   } satisfies Preset.ThemeConfig,
 
-  themes: ['@docusaurus/theme-mermaid'],
+  themes: [
+    '@docusaurus/theme-mermaid',
+    require.resolve('docusaurus-theme-plantuml'),
+  ],
   // In order for Mermaid code blocks in Markdown to work,
   // you also need to enable the Remark plugin with this option
   markdown: {
