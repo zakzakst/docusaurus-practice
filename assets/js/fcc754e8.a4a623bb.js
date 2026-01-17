@@ -1,1 +1,0 @@
-"use strict";(globalThis.webpackChunkdocusaurus_practice=globalThis.webpackChunkdocusaurus_practice||[]).push([[2868],{4500(a){a.exports=JSON.parse('{"metadata":{"permalink":"/docusaurus-practice/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
