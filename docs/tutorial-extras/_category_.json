@@ -1,7 +1,8 @@
 {
-  "label": "Tutorial - Extras",
+  "label": "ラベル2",
   "position": 3,
   "link": {
-    "type": "generated-index"
+    "type": "generated-index",
+    "description": "ラベル2の概要"
   }
 }

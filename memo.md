@@ -4,6 +4,12 @@
 GIT_USER=zakzakst GIT_USER_NAME=zakzakst GIT_USER_EMAIL=e1433104@gmail.com npm run deploy
 ```
 
+- サイト内検索やる
+    - https://github.com/cmfcmf/docusaurus-search-local
+
+- 更新日メタデータから記述される方法あるか調べる
+- サイドバーのディレクトリのテキスト変更できるか調べる
+
 - Mermaid勉強する
     - https://mermaid.js.org/
 
