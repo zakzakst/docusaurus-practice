@@ -10,15 +10,6 @@ Let's translate `docs/intro.md` to French.
 
 Modify `docusaurus.config.js` to add support for the `fr` locale:
 
-```js title="docusaurus.config.js"
-export default {
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'fr'],
-  },
-};
-```
-
 ## Translate a doc
 
 Copy the `docs/intro.md` file to the `i18n/fr` folder:

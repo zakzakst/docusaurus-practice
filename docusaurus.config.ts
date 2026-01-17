@@ -32,18 +32,19 @@ const config: Config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'ja',
+    locales: ['ja'],
   },
 
-  plugins: [
-    [
-      "@cmfcmf/docusaurus-search-local",
-      {
-        language: "ja",
-      },
-    ],
-  ],
+  // plugins: [
+  //   [
+  //     "@cmfcmf/docusaurus-search-local",
+  //     {
+  //       language: "ja",
+  //     },
+  //   ],
+  // ],
+  // plugins: ["@cmfcmf/docusaurus-search-local"],
 
   presets: [
     [
@@ -88,10 +89,10 @@ const config: Config = {
     },
     navbar: {
       title: '開発ドキュメント',
-      // logo: {
-      //   alt: 'My Site Logo',
-      //   src: 'img/logo.svg',
-      // },
+      logo: {
+        alt: 'My Site Logo',
+        src: 'img/logo.svg',
+      },
       items: [
         {
           type: 'docSidebar',
@@ -99,7 +100,7 @@ const config: Config = {
           position: 'left',
           label: '仕様・要件',
         },
-        {to: '/blog', label: '会議', position: 'left'},
+        // {to: '/blog', label: '会議', position: 'left'},
         // {to: '/about', label: 'About', position: 'left'},
         {
           href: 'https://github.com/zakzakst/docusaurus-practice',
@@ -162,6 +163,25 @@ const config: Config = {
   themes: [
     '@docusaurus/theme-mermaid',
     require.resolve('docusaurus-theme-plantuml'),
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
+      ({
+        // ... Your options.
+        // `hashed` is recommended as long-term-cache of index file is possible.
+        hashed: true,
+
+        // For Docs using Chinese, it is recomended to set:
+        language: ["ja"],
+
+        // Customize the keyboard shortcut to focus search bar (default is "mod+k"):
+        // searchBarShortcutKeymap: "s", // Use 'S' key
+        // searchBarShortcutKeymap: "ctrl+shift+f", // Use Ctrl+Shift+F
+
+        // If you're using `noIndex: true`, set `forceIgnoreNoIndex` to enable local index:
+        // forceIgnoreNoIndex: true,
+      }),
+    ],
   ],
   // In order for Mermaid code blocks in Markdown to work,
   // you also need to enable the Remark plugin with this option
