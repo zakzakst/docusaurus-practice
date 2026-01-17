@@ -1,8 +1,9 @@
 ---
 sidebar_position: 1
+description: 概要
 ---
 
-# Manage Docs Versions
+# タイトル
 
 Docusaurus can manage multiple versions of your docs.
 
